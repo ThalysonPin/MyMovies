@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaStar } from 'react-icons/fa'
 import { imageMovies, searchMovies, popularMovies } from '../../axios/config'
-
+import './movieCard.css'
 
 const MovieCard = ({ movie, showLink = true }) => {
     

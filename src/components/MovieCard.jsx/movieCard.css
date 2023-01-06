@@ -1,0 +1,9 @@
+.movie-card{
+    display: flex;
+
+}
+
+
+.movie-card img{
+    height: 20rem;
+}

@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { imageMovies, searchMovies, popularMovies } from '../../axios/config'
 import MovieCard from '../../components/MovieCard.jsx'
-
+import './Home.css'
 
 const moviesURL = import.meta.env.VITE_API
 const apiKey = import.meta.env.VITE_API_KEY
@@ -33,7 +33,7 @@ function Home() {
 
 
     return (
-        <div>
+        <div className='container-movies'>
             {topMovies.length > 0 ? topMovies.map((movie) => <MovieCard key={movie.id} movie={movie}/> ) : <p>Loading...</p>}
         </div>
     )
