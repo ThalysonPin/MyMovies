@@ -1,15 +1,17 @@
 #navbar{
     background-color: rgb(50, 50, 50, 90%);
-    position: fixed;
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 10%;
+    height: 20%;
     align-items: center;
+    padding: 1.2rem 2rem;
 }
 
-#navbar h2, .navbar-form{
-    margin: 0 40px;
+.navbar-form{
+    display: flex;
+    gap: .3rem;
 }
 
 .navbar-form input{
@@ -29,10 +31,16 @@
 .navbar-btn{
     padding: 5px;
     background-color: transparent;
-    margin-left: 6px;
     border: 2px solid #f7d354;
     color: #f7d354;
     border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.navbar-btn:hover{
+    background-color: #f7d354;
+    color: rgb(50, 50, 50);
 }
 
 .navbar-btn svg{

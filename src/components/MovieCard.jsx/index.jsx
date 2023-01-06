@@ -8,8 +8,14 @@ const MovieCard = ({ movie, showLink = true }) => {
     
   return (
     <div className='movie-card'>
-        <img src={imageMovies + movie.poster_path} alt={movie.title}/>
-        <h2>{movie.title}</h2>
+        <div className='container-img'>
+          <img src={imageMovies + movie.poster_path} alt={movie.title}/>
+        </div>
+        
+        <div>
+          <h2>{movie.title}</h2>
+        </div>
+        
         <p>
             <FaStar /> {movie.vote_average}
         </p>

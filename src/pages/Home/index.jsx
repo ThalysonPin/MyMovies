@@ -33,9 +33,12 @@ function Home() {
 
 
     return (
+        <>
+        <h1 className='title-home'>Best movies: </h1>
         <div className='container-movies'>
             {topMovies.length > 0 ? topMovies.map((movie) => <MovieCard key={movie.id} movie={movie}/> ) : <p>Loading...</p>}
         </div>
+        </>
     )
 }
 

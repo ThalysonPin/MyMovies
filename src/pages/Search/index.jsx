@@ -10,12 +10,11 @@ function Search() {
     const [searchParams] = useSearchParams()
 
     const [movies, setMovies] = useState([])
-    const query = searchParams.get
+    const query = searchParams.get("q")
 
     return (
         <div className='container'>
             <h2>Resultados para: <span className='movie-query'>{query}</span></h2>
-            {topMovies.length > 0 ? topMovies.map((movie) => <MovieCard key={movie.id} movie={movie}/> ) : <p>Loading...</p>}
 
         </div>
     )
